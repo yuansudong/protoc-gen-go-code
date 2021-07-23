@@ -19,17 +19,6 @@ import (
 )
 
 const codeFileTemplate = `
-// 以此等代码注释开头的,都属于工具生成.请不要人为改变.
-// 寄语:  工作是为了生活,而不是生活为了工作. 如何能在最少的时间内完成工作,这就是工具存在的意义!
-///////////////////////////////////////////////////////////////////////////
-// 		   Package: {{ .PackageName }}
-// 		   Description: 服务于掌沃无限时制作
-//		   Author: yuansudong
-// 		   Protoc: unknown
-//		   UpdateTime: {{ .DateTime }}
-// 		   Company: 掌沃无限
-//		   CreateTime: 2021	
-///////////////////////////////////////////////////////////////////////////
 package {{ .PackageName }}
 {{ if .IsHave }}
 import (
